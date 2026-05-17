@@ -92,13 +92,23 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 
-		page.get().close();
-
-		context.get().close();
-
-		browser.get().close();
-
-		playwright.get().close();
+		try {
+			if (page.get() != null)
+				page.get().close();
+			if (context.get() != null)
+				context.get().close();
+			if (browser.get() != null)
+				browser.get().close();
+			if (playwright.get() != null)
+				playwright.get().close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			page.remove();
+			context.remove();
+			browser.remove();
+			playwright.remove();
+		}
 	}
 
 	@AfterSuite
