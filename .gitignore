@@ -1,0 +1,35 @@
+# Maven Target Folder
+target/
+
+# Reports
+reports/
+
+# Screenshots
+screenshots/
+
+# Logs
+logs/
+
+# Eclipse Files
+.project
+.classpath
+.settings/
+
+# IntelliJ Files
+.idea/
+
+# VS Code Files
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Test Output
+test-output/
+
+# Temporary Files
+*.tmp
+
+# Compiled Files
+*.class
