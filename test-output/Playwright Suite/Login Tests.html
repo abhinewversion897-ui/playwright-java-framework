@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>TestNG:  Login Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun May 17 20:51:27 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>73 seconds (73792 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LoginTest.invalid_Login_Test()'><b>invalid_Login_Test</b><br>Test class: tests.LoginTest</td>
+<td><div><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\dispatcher.js:105:30)
+    at Page.&lt;anonymous&gt; (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\pageDispatcher.js:72:12)
+    at Page.emit (node:events:508:28)
+    at Page._didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\page.js:165:10)
+    at CRPage.didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crPage.js:126:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crBrowser.js:184:14)
+    at CRSession.emit (node:events:508:28)
+    at C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crConnection.js:133:14
+}
+Call log:
+-   - waiting for getByText(&quot;Invalid credentials&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:776)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:622)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5370)
+	at pages.LoginPage.getLoginErrormessage(LoginPage.java:102)
+	at tests.LoginTest.invalid_Login_Test(LoginTest.java:53)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\dispatcher.js:105:30)
+    at Page.&lt;anonymous&gt; (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\pageDispatcher.js:72:12)
+    at Page.emit (node:events:508:28)
+    at Page._didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\page.js:165:10)
+    at CRPage.didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crPage.js:126:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crBrowser.js:184:14)
+    at CRSession.emit (node:events:508:28)
+    at C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crConnection.js:133:14
+}
+Call log:
+-   - waiting for getByText(&quot;Invalid credentials&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.close(PageImpl.java:549)
+	at com.microsoft.playwright.Page.close(Page.java:3978)
+	at base.BaseTest.tearDown(BaseTest.java:95)
+	... 12 more
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace387743333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace387743333'><pre>com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\dispatcher.js:105:30)
+    at Page.&lt;anonymous&gt; (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\pageDispatcher.js:72:12)
+    at Page.emit (node:events:508:28)
+    at Page._didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\page.js:165:10)
+    at CRPage.didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crPage.js:126:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crBrowser.js:184:14)
+    at CRSession.emit (node:events:508:28)
+    at C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crConnection.js:133:14
+}
+Call log:
+-   - waiting for getByText(&quot;Invalid credentials&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:776)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:622)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5370)
+	at pages.LoginPage.getLoginErrormessage(LoginPage.java:102)
+	at tests.LoginTest.invalid_Login_Test(LoginTest.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\dispatcher.js:105:30)
+    at Page.&lt;anonymous&gt; (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\dispatchers\pageDispatcher.js:72:12)
+    at Page.emit (node:events:508:28)
+    at Page._didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\page.js:165:10)
+    at CRPage.didClose (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crPage.js:126:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crBrowser.js:184:14)
+    at CRSession.emit (node:events:508:28)
+    at C:\Users\Lenovo\AppData\Local\Temp\playwright-java-4467900041282012305\package\lib\server\chromium\crConnection.js:133:14
+}
+Call log:
+-   - waiting for getByText(&quot;Invalid credentials&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.close(PageImpl.java:549)
+	at com.microsoft.playwright.Page.close(Page.java:3978)
+	at base.BaseTest.tearDown(BaseTest.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+	... 12 more
+</pre></div></td>
+<td>7</td>
+<td>tests.LoginTest@1bb5a082</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LoginTest.valid_Login_Test()'><b>valid_Login_Test</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@1bb5a082</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyBlankpasswordErrorMessage()'><b>verifyBlankpasswordErrorMessage</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@1bb5a082</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyBlankUsernameErrorMessage()'><b>verifyBlankUsernameErrorMessage</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@1bb5a082</td></tr>
+<tr>
+<td title='tests.LoginTest.Login_withExcel_Test()'><b>Login_withExcel_Test</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginTest@1bb5a082</td></tr>
+<tr>
+<td title='tests.LoginTest.valid_Logout()'><b>valid_Logout</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>5</td>
+<td>tests.LoginTest@1bb5a082</td></tr>
+</table><p>
+</body>
+</html>

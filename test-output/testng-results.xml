@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-17T21:03:30 IST" name="Playwright Suite" finished-at="2026-05-17T21:04:13 IST" duration-ms="42986">
+    <groups>
+    </groups>
+    <test started-at="2026-05-17T21:03:30 IST" name="Single Test" finished-at="2026-05-17T21:04:13 IST" duration-ms="42986">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:03:30 IST" name="startReport" finished-at="2026-05-17T21:03:30 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:03:30 IST" name="setup" finished-at="2026-05-17T21:04:02 IST" duration-ms="32216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:03:30 IST" name="setup" finished-at="2026-05-17T21:04:06 IST" duration-ms="36262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalid_Login_Test()[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:04:02 IST" name="invalid_Login_Test" finished-at="2026-05-17T21:04:05 IST" duration-ms="2332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_Login_Test -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:04:05 IST" name="tearDown" finished-at="2026-05-17T21:04:07 IST" duration-ms="2434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalid_Login_Test status=SUCCESS method=LoginTest.invalid_Login_Test()[pri:0, instance:tests.LoginTest@515c6049] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="Login_withExcel_Test()[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:04:06 IST" name="Login_withExcel_Test" finished-at="2026-05-17T21:04:11 IST" duration-ms="4414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_withExcel_Test -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:04:11 IST" name="tearDown" finished-at="2026-05-17T21:04:13 IST" duration-ms="2252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_withExcel_Test status=SUCCESS method=LoginTest.Login_withExcel_Test()[pri:0, instance:tests.LoginTest@515c6049] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.LoginTest@515c6049]" started-at="2026-05-17T21:04:13 IST" name="flushReport" finished-at="2026-05-17T21:04:14 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Single Test -->
+  </suite> <!-- Playwright Suite -->
+</testng-results>
